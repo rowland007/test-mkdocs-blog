@@ -9,22 +9,18 @@ repo_name: 'Randy Rowland'
 repo_url: 'https://github.com/rowland007/'
 
 # Copyright
-copyright: 'Copyright &copy; 2021-2022 Randall Rowland<br>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.'
+copyright: 'Copyright &copy; 2021-2024 Randall Rowland<br>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.'
 
 # Navigation Menu
 nav:
     - Overview: 'index.md'
-    - How to use the template:
-        'Overview': 'template/index.md'
-        'More Info': 'template/info.md'
-    - About Mkdocs:
-        'Overview': 'mkdocs/index.md'
-    - Documentation Style:
-        'Overview': 'style/index.md'
-    - Appendix 1 - Resources: 'resources.md'
+    - Blog: 'blog/index.md'
 
 # Configuration
 theme:
+  features:
+    - navigation.tabs
+    - navigation.tracking
   name: material
   palette:
     - scheme: slate
@@ -50,12 +46,16 @@ extra:
       link: https://randyrowland.me
     - icon: fontawesome/brands/github
       link: https://github.com/rowland007
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/randarxj7
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/randall-rowland-jr
     - icon: fontawesome/brands/reddit-alien
       link: https://www.reddit.com/user/rowland007
+
+# Plugins
+plugins:
+  - search
+  - blog:
+      post_excerpt: optional
 
 # Extensions
 markdown_extensions:
