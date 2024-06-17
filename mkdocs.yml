@@ -1,8 +1,8 @@
 # Project information
-site_name: 'Template Repository'
-site_description: 'Used to create new project sites with automated documentation from Mkdocs'
+site_name: 'Randy Rowland'
+site_description: 'Testing moving from Hugo to Mkdocs for my blog and resume'
 site_author: 'Randy Rowland'
-site_url: 'https://rowland007.github.io/template-repository/'
+site_url: 'https://rowland007.github.io/test-mkdocs-blog/'
 
 # Repository
 repo_name: 'Randy Rowland'
@@ -13,8 +13,9 @@ copyright: 'Copyright &copy; 2021-2024 Randall Rowland<br>This work is licensed 
 
 # Navigation Menu
 nav:
-    - Overview: 'index.md'
-    - Blog: 'blog/index.md'
+    - Home: 'index.md'
+    - Blog: 
+      - 'blog/index.md'
 
 # Configuration
 theme:
