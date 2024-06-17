@@ -1,32 +1,18 @@
 ---
-# Documentation: https://sourcethemes.com/academic/docs/managing-content/
-
-title: "Running WireGuard on Windows Standard User Accounts"
-subtitle: ""
-summary: "Unlike other VPN tools and technologies, Wireguard creates a tunnel interface. It does this outside the official VPN plumbing of Windows. That design has the severe limitation that you need to be an administrator of the machine, but this guide provides a workaround to allow standard users to enable the VPN interface."
-authors: [admin]
-tags: [vpn]
-categories: [VPN]
-date: 2023-04-18T21:17:32-07:00
-lastmod: 2023-04-18T21:17:32-07:00
-featured: false
 draft: false
-
-# Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder.
-# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
-image:
-  caption: ""
-  focal_point: "Smart"
-  preview_only: true
-
-# Projects (optional).
-#   Associate this post with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
-#   Otherwise, set `projects = []`.
-projects: []
+date: 2023-04-18
+categories:
+    - Network
+    - VPN
+    - User Permissions
 ---
+
+# Running WireGuard on Windows Standard User Accounts
+
+Unlike other VPN tools and technologies, Wireguard creates a tunnel interface. It does this outside the official VPN plumbing of Windows. That design has the severe limitation that you need to be an administrator of the machine, but this guide provides a workaround to allow standard users to enable the VPN interface.
+
+<!-- more -->
+
 ![logo](wireguard-logo.jpg)
 
 WireGuard® is an extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography. It aims to be faster, simpler, leaner, and more useful than IPsec, while avoiding the massive headache. It intends to be considerably more performant than OpenVPN. WireGuard is designed as a general purpose VPN. **However**, WireGuard will not run on Windows when the user is a non-administrator account.
