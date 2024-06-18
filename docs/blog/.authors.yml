@@ -1,5 +1,5 @@
 authors:
   randar:
     name: Randy Rowland
-    description: Creator
-    avatar: ..\static\images\avatar.jpg
+    description: Author
+    avatar: blog/avatar.jpg
