@@ -55,9 +55,21 @@ extra:
 # Plugins
 plugins:
   - search
+  - social
   - blog:
       post_excerpt: optional
 
+extra_css:
+  - stylesheets/aos.css
+  - stylesheets/main.css
+  - stylesheets/mdb.min.css
+  - stylesheets/mdb.rtl.min.css
+
+extra_javascript:
+  - javascripts/aos.js
+  - javascripts/main.js
+  - javascripts/mdb.min.js
+  
 # Extensions
 markdown_extensions:
   - abbr
@@ -89,8 +101,5 @@ markdown_extensions:
       custom_checkbox: true
   - footnotes
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
-extra_javascript:
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
